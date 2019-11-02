@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: '微軟正黑體', sans-serif;
+    background-color: #000000;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+.bg-image {
+    background-image: url(images/BG.jpg);  /*自己的電腦圖片資料夾位置*/
+    position: absolute;  /*絕對位置*/
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-position: center;
+    background-size: cover;
+    z-index: -999; /*設定圖片層級*/
+  }
+/* ------ 影片 ------ */
+
+.video-area {
+    padding: 5% 20%;
+    background-color: #272727;
+}
+
+.video-container {
+    position: relative;
+    padding: 30%;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ------產品介紹區塊 ------*/
+
+.creative_area {
+    padding: 50px 0 100px 0;
+    background-color: #fff;
+}
+
+.creative_area h2 {
+    color: #6fafb4;
+    margin: 20px 0 60px 0;
+}
+
+.creative_area .card img {
+    width: 100%;
+}
+
+.creative_area .card h4 {
+    color: #fff;
+}
+
+
+/* 把標題區塊card-title-wrap設定好位置 */
+
+.creative_area .card-title-wrap {
+    padding: 15px 25px;
+    position: relative;
+    z-index: 9;
+    background-color: #fff;
+}
+
+
+/* 設定產品說明文字標題 */
+
+.creative_area .card-title-wrap .card-title {
+    display: block;
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.creative_area .card-title-wrap .card-text {
+    display: block;
+    margin: 0;
+    font-size: 18px;
+    color: #335
+}
+
+
+/* 滑鼠滑過去  */
+
+.creative_area .card:hover {
+    visibility: visible;
+    background-color: #6fafb4;
+}
+
+.creative_area .card:hover .card-title-wrap {
+    background-color: #6fafb4;
+}
+
+
+/* 滑鼠滑過照片變透明 */
+
+.creative_area .pic-hover {
+    padding-top: 45px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.creative_area .card:hover .pic-hover {
+    opacity: .8;
+    visibility: visible;
+    color: #FFFFFF;
+}
