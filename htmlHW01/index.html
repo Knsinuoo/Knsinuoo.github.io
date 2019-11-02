@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- style -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- bootstrap連結 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body>
+<!-- 網頁抬頭 -->
+ <!-- 網頁抬頭選單 -->
+ <header>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+            <div class="container">
+                <!-- LOGO -->
+                <a href="#" class="navbar-brand">
+                    <img src="images/logo.png" width="90" height="60" alt="logo" />
+                </a>
+                <!-- 手機選單漢堡按鈕 -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+          <!-- 漢堡ICON -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+                <!-- 選單內容 -->
+                <div id="navbar-collapse" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li><a href="#master" class="nav-link">主角</a></li>
+                        <li><a href="#Godformula" class="nav-link">式神</a></li>
+                        <li><a href="#video" class="nav-link">影片</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="bg-image"></div>
+    </header>
+ <!-- 可以輪播的Banner圖片 -->
+ <section id="master">
+        <div id="carousel-controller" class="carousel slide" data-ride="carousel">
+            <!-- 輪播圖片 -->
+            <div class="carousel-inner">
+                <!-- 圖片1 -->
+                <div class="carousel-item active">
+                    <img class="w-100" src="images/master01.PNG" alt="">
+                </div>
+                <!-- 圖片2 -->
+                <div class="carousel-item">
+                    <img class="w-100" src="images/master02.PNG" alt="">
+                </div>
+                <!-- 圖片3 -->
+                <div class="carousel-item">
+                    <img class="w-100" src="images/master03.PNG" alt="">
+                </div>
+                 <!-- 圖片4 -->
+                 <div class="carousel-item">
+                        <img class="w-100" src="images/master04.PNG" alt="">
+                    </div>
+            </div>
+            <!-- 圖片上一頁按鈕 -->
+            <a href="#carousel-controller" data-slide="prev" class="carousel-control-prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <!-- 圖片下一頁按鈕 -->
+            <a href="#carousel-controller" data-slide="next" class=" carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+            <!-- 下方點點 -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-controller" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-controller" data-slide-to="1"></li>
+                <li data-target="#carousel-controller" data-slide-to="2"></li>
+                <li data-target="#carousel-controller" data-slide-to="3"></li>
+            </ol>
+        </div>
+    </section>
+    <!-- 式神 -->
+    <section id="Godformula" class="creative_area">
+            <div class="container">
+                <h2 class="text-center">
+                    三大妖怪
+                </h2>
+                <!-- 產品照片 -->
+                <div class="row">
+                    <!-- 照片組1 -->
+                    <div class="col">
+                        <div class="card">
+                            <a href="#"><img alt="產品照片1" src="images/dog.jpeg">
+                                <div class="card-title-wrap">
+                                    <span class="card-title">大天狗</span>
+                                </div>
+                                <div class="pic-hover">
+                                    <h4>手持葉団扇可以扇起強力的颶風</h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 照片組2 -->
+                    <div class="col">
+                        <div class="card">
+                            <a href="#"><img alt="產品照片2" src="images/Fox.jpg"">
+                                <div class="card-title-wrap">
+                                    <span class="card-title">玉藻前</span>
+                                </div>
+                                <div class="pic-hover">
+                                    <h4>如狐而九尾，其音如婴儿，能食人，食者不蛊</h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 照片組3 -->
+                    <div class="col">
+                        <div class="card">
+                            <a href="#"><img alt="產品照片3" src="images/kid.jpg">
+                                <div class="card-title-wrap">
+                                    <span class="card-title">酒吞童子</span>
+                                </div>
+                                <div class="pic-hover">
+                                    <h4>居於大江山之鬼王</h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- 影片 -->
+    <section class="container-fluid video-area" id="video">
+            <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9ig8zm2Vh78" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  </div>
+        </section>
+        <!-- 頁腳 -->
+    <footer class="footer">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-12 footer_logo">
+                        <img src="images/logo.png"width="90" height="60">
+                    </div>
+                    <div class="col-md-4 col-sm-12 footer_address">
+                        <ul>
+                            <li>官網連結：https://www.onmyojigame.com/zh/index.html</li>
+
+                    </div>
+                </div>
+                
+            </div>
+    
+        </footer>
+    <!-- jquery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
