@@ -1,0 +1,18 @@
+.custom-countdown-elegant
+.et_pb_countdown_timer .section.values {
+width: 21%;
+}
+ 
+.custom-countdown-elegant div.sep.section {
+display: none;
+}
+ 
+.custom-countdown-elegant .value {
+letter-spacing: 6px;
+background-color: white;
+padding: 30px 6px !important;
+padding-left: 11px !important;
+}
+.custom-countdown-1 .hours {
+margin-left: 21px;
+}

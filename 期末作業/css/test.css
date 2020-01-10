@@ -1,0 +1,131 @@
+.time {
+
+
+    position: absolute;
+    top: 400px;
+    left: 1200px;
+}
+
+.clock {
+    border-radius: 50%;
+    /* border: 0.5vmin solid rgb(131, 131, 131); */
+    background: none;
+    background-size: 88%;
+    height: 17vmin;
+    width: 17vmin;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.clock.simple:after {
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 5%;
+    height: 5%;
+    z-index: 10;
+}
+
+.hour12,
+.hour1,
+.hour2,
+.hour3,
+.hour4,
+.hour5 {
+    height: 1%;
+    width:15vmin;
+    background: transparent;
+    border-left: 2vmin solid rgb(255, 255, 255);
+    border-right: 2vmin solid rgb(255, 255, 255);
+    transform-origin: -0% -50%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+
+.hour12 {
+    transform: rotateZ(90deg) translate(-50%, -50%);
+}
+
+.hour1 {
+    transform: rotateZ(-30deg) translate(-50%, -50%);
+}
+
+.hour2 {
+    transform: rotateZ(-60deg) translate(-50%, -50%);
+}
+
+.hour3 {
+    transform: rotateZ(0deg) translate(-50%, -50%);
+}
+
+.hour4 {
+    transform: rotateZ(30deg) translate(-50%, -50%);
+}
+
+.hour5 {
+    transform: rotateZ(60deg) translate(-50%, -50%);
+}
+
+.minutes-container,
+.hours-container,
+.seconds-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.hours {
+    background: rgb(255, 255, 255);
+    width: 2.5%;
+    height: 30%;
+    position: absolute;
+    top: 20%;
+    left: 48.75%;
+    transform-origin: 50% 100%;
+}
+
+.minutes {
+    background: rgb(255, 255, 255);
+    width: 2%;
+    height: 40%;
+    left: 49%;
+    position: absolute;
+    top: 10%;
+    transform-origin: 50% 100%;
+}
+
+.seconds {
+    background: rgb(255, 255, 255);
+    width: 1%;
+    height: 60%;
+    left: 49.5%;
+    position: absolute;
+    top: 2%;
+    transform-origin: 50% 80%;
+    z-index: 8;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+.hours-container {
+    animation: rotate 43200s infinite linear;
+}
+
+.minutes-container {
+    transition: transform 0.3s cubic-bezier(.4, 2.08, .55, .44);
+}
+
+.seconds-container {
+    transition: transform 0.2s cubic-bezier(.4, 2.08, .55, .44);
+}
